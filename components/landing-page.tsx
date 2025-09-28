@@ -1,12 +1,11 @@
 import { Icon } from "@iconify/react";
-import { Button } from "../components/ui/button";
-import { Card, CardContent } from "../components/ui/card";
-import { Separator } from "../components/ui/separator";
-import { Badge } from "../components/ui/badge";
-import { Avatar, AvatarImage, AvatarFallback } from "../components/ui/avatar";
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
-export default function Home() {
+export function LandingPage() {
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
@@ -17,13 +16,28 @@ export default function Home() {
               <span className="font-bold text-2xl text-secondary">Safeguarding Africa</span>
             </div>
             <nav className="hidden md:flex items-center space-x-6 text-sm font-medium justify-center">
-              <Link href="#features" className="text-foreground/60 hover:text-foreground transition-colors text-muted">Projects</Link>
-              <Link href="#pricing" className="text-foreground/60 hover:text-foreground transition-colors text-muted">Pricing</Link>
-              <Link href="#testimonials" className="text-foreground/60 hover:text-muted transition-colors text-secondary" >Testimonials</Link>
+              <a
+                href="#features"
+                className="text-foreground/60 hover:text-foreground transition-colors text-muted"
+              >
+                Projects
+              </a>
+              <a
+                href="#pricing"
+                className="text-foreground/60 hover:text-foreground transition-colors text-muted"
+              >
+                Pricing
+              </a>
+              <a
+                href="#testimonials"
+                className="text-foreground/60 hover:text-foreground transition-colors text-muted"
+              >
+                Testimonials
+              </a>
             </nav>
-            <Link href='mailto:safeguardingafrica.org' className="flex items-center space-x-2 flex-1 justify-end text-muted">
+            <div className="flex items-center space-x-2 flex-1 justify-end text-muted">
               <Button size="sm">Partner With Us</Button>
-            </Link>
+            </div>
           </div>
         </div>
       </header>
@@ -76,12 +90,12 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="font-heading font-semibold text-xl mb-3">
-                    Deep Safeguarding
+                    Intelligent Automation
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
-                   Safeguarding Africa empowers communities to keep young people
-                  safe. We work with schools, nonprofits, and families to prevent harm, recognize risks, and respond
-                  effectively. Our approach is research-based and community-driven
+                    AI-powered workflows that learn from your business patterns and optimize
+                    processes automatically. Experience the future of business automation with
+                    machine learning capabilities that adapt to your unique needs.
                   </p>
                 </div>
               </CardContent>
@@ -91,10 +105,10 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Icon icon="bx:line-chart" className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-heading font-semibold text-xl mb-2">Training Communities in Phoenix</h3>
+                <h3 className="font-heading font-semibold text-xl mb-2">Advanced Analytics</h3>
                 <p className="text-muted-foreground">
-                  We trained more that 800 people in phoenix in safeguarding and goblal child proteccion procedures.
-                  Achiving big impacts in communitaria events and globald development.
+                  Real-time insights and detailed reporting to track performance and optimize your
+                  workflows for maximum efficiency.
                 </p>
               </CardContent>
             </Card>
@@ -103,9 +117,11 @@ export default function Home() {
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Icon icon="lucide:puzzle" className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-heading font-semibold text-lg mb-2">Maning small area</h3>
+                <h3 className="font-heading font-semibold text-lg mb-2">99.9% Uptime Guarantee</h3>
                 <p className="text-muted-foreground text-sm">
-                 1100 people have reported for benefiting form Mannings training and enhaced their child protection capabilites.
+                  Experience unparalleled reliability with our enterprise-grade infrastructure. Our
+                  robust monitoring systems and redundant architecture ensure your applications stay
+                  online 24/7.
                 </p>
               </CardContent>
             </Card>
@@ -119,7 +135,7 @@ export default function Home() {
               Simple Pricing
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Pay little and Negociate bulk trainings
+              Choose the perfect plan for your business needs. Upgrade or downgrade at any time.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -130,8 +146,8 @@ export default function Home() {
                   <p className="text-muted text-left">Perfect for small teams</p>
                 </div>
                 <div className="flex items-baseline gap-2 mt-6">
-                  <div className="text-4xl font-bold text-left text-accent">$9</div>
-                  <div className="text-popover-foreground text-left">per user</div>
+                  <div className="text-4xl font-bold text-left text-accent">$29</div>
+                  <div className="text-popover-foreground text-left">per month</div>
                 </div>
                 <div className="mt-8 mb-6">
                   <Button variant="outline" className="w-full">
@@ -142,15 +158,15 @@ export default function Home() {
                 <div className="space-y-4 text-secondary">
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>2 hours monthly training training</span>
+                    <span>Up to 1,000 workflow executions</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span> Monthly Follow up</span>
+                    <span>50+ integrations</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>Amazing results</span>
+                    <span>Email support</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
@@ -170,8 +186,8 @@ export default function Home() {
                   <p className="text-muted text-left">Ideal for growing businesses</p>
                 </div>
                 <div className="flex items-baseline gap-2 mt-6">
-                  <div className="text-4xl font-bold text-left text-accent">$19</div>
-                  <div className="text-muted-foreground text-left">per user</div>
+                  <div className="text-4xl font-bold text-left text-accent">$99</div>
+                  <div className="text-muted-foreground text-left">per month</div>
                 </div>
                 <div className="mt-8 mb-6">
                   <Button className="w-full">Get Started</Button>
@@ -180,11 +196,11 @@ export default function Home() {
                 <div className="space-y-4 text-secondary">
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>Up to 10 hours monthly training</span>
+                    <span>Up to 10,000 workflow executions</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>Weekly Follow up</span>
+                    <span>500+ integrations</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
@@ -196,7 +212,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>Inperson and online trainings</span>
+                    <span>Custom integrations</span>
                   </div>
                 </div>
               </CardContent>
@@ -209,7 +225,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-baseline gap-2 mt-6">
                   <div className="text-4xl font-bold text-left text-muted">$299</div>
-                  <div className="text-muted-foreground text-left">for 20</div>
+                  <div className="text-muted-foreground text-left">per month</div>
                 </div>
                 <div className="mt-8 mb-6">
                   <Button variant="outline" className="w-full">
@@ -220,15 +236,15 @@ export default function Home() {
                 <div className="space-y-4 text-secondary">
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>Global program</span>
+                    <span>Unlimited workflow executions</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>Up to 50 hours monthly training</span>
+                    <span>All integrations</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>In person and Online</span>
+                    <span>24/7 dedicated support</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
@@ -236,7 +252,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <Icon icon="lucide:check" className="w-5 h-5 text-primary" />
-                    <span>Customized capacity building programs</span>
+                    <span>On-premise deployment</span>
                   </div>
                 </div>
               </CardContent>
@@ -249,8 +265,8 @@ export default function Home() {
           <div className="text-center space-y-4 mb-16">
             <h2 className="font-heading text-3xl md:text-4xl font-bold">What Our Customers Say</h2>
             <p className="text-xl text-foreground mx-auto">
-              Join thousands of satisfied customers who have transformed their Organization with
-              Safeguarding Africa
+              Join thousands of satisfied customers who have transformed their businesses with
+              FlowAI
             </p>
           </div>
           <div className="grid gap-8">
