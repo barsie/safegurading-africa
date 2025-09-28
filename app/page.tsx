@@ -21,7 +21,7 @@ export default function Home() {
               <Link href="#pricing" className="text-foreground/60 hover:text-foreground transition-colors text-muted">Pricing</Link>
               <Link href="#testimonials" className="text-foreground/60 hover:text-muted transition-colors text-secondary" >Testimonials</Link>
             </nav>
-            <Link href='mailto:safeguardingafrica.org' className="flex items-center space-x-2 flex-1 justify-end text-muted">
+            <Link href="mailto:safeguardingafrica.org" className="flex items-center space-x-2 flex-1 justify-end text-muted">
               <Button size="sm">Partner With Us</Button>
             </Link>
           </div>
@@ -32,7 +32,7 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-6 relative z-10">
           <div className="flex flex-col items-center text-center space-y-8">
             <h1 className="font-heading text-4xl md:text-6xl font-bold tracking-tight max-w-4xl text-secondary">
-              Protecting Africa’s Future One Child at a Time'
+              Protecting Africa is Future One Child at a Time
             </h1>
             <p className="text-xl text-accent max-w-2xl leading-relaxed">
               Safeguarding Africa equips communities to prevent harm, protect children, and help
@@ -75,9 +75,7 @@ export default function Home() {
                   <Icon icon="lucide:brain" className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="font-heading font-semibold text-xl mb-3">
-                    Deep Safeguarding
-                  </h3>
+                  <h3 className="font-heading font-semibold text-xl mb-3">Deep Safeguarding</h3>
                   <p className="text-muted-foreground leading-relaxed">
                    Safeguarding Africa empowers communities to keep young people
                   safe. We work with schools, nonprofits, and families to prevent harm, recognize risks, and respond
@@ -265,8 +263,7 @@ export default function Home() {
                     <Icon icon="ph:star-fill" className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "We've saved over 40 hours per week on manual data entry tasks. The ROI was
-                    evident within the first month of implementation."
+                    We have saved over 40 hours per week on manual data entry tasks. The ROI wasevident within the first month of implementation.
                   </p>
                   <div className="flex items-center space-x-3">
                     <Avatar>
@@ -293,8 +290,8 @@ export default function Home() {
                     <Icon icon="ph:star-fill" className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "FlowAI's integration capabilities are outstanding. We connected all our tools
-                    seamlessly and now have a unified workflow across departments."
+                    Safeguarding Africa integration capabilities are outstanding. We connected all our tools
+                    seamlessly and now have a unified workflow across departments.
                   </p>
                   <div className="flex items-center space-x-3 text-foreground">
                     <Avatar>
@@ -321,8 +318,7 @@ export default function Home() {
                     <Icon icon="ph:star-fill" className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "The AI-powered insights have transformed how we make business decisions. We're
-                    now proactive instead of reactive in our approach."
+                    The AI-powered insights have transformed how we make business decisions. We are now proactive instead of reactive in our approach.
                   </p>
                   <div className="flex items-center space-x-3">
                     <Avatar>
@@ -356,8 +352,8 @@ export default function Home() {
                     <Icon icon="ph:star-fill" className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "Implementation was smooth and the support team is exceptional. FlowAI has
-                    become an essential part of our daily operations."
+                    Implementation was smooth and the support team is exceptional. FlowAI has
+                    become an essential part of our daily operations.
                   </p>
                   <div className="flex items-center space-x-3">
                     <Avatar>
@@ -384,8 +380,7 @@ export default function Home() {
                     <Icon icon="ph:star-fill" className="w-5 h-5 text-primary" />
                   </div>
                   <p className="text-muted-foreground mb-6">
-                    "This platform has revolutionized our workflow efficiency. The seamless
-                    integration and intuitive design make complex tasks feel effortless."
+                    This platform has revolutionized our workflow efficiency. The seamless integration and intuitive design make complex tasks feel effortless.
                   </p>
                   <div className="flex items-center space-x-3">
                     <Avatar>
