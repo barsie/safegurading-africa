@@ -7,6 +7,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "../components/ui/avatar";
 import Link from "next/link";
 import Image from "next/image";
 import logo from '../public/sfafrica.jpg'
+import logoLandScape from '../public/sfafricalogo.jpg'
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center space-x-2 flex-1">
-              <Image src={logo} alt="" width={48} height={48}/>
+              <Image src={logo} alt="" width={48} height={48} className=""/>
               {/* <Icon icon="fa7-solid:zap" className="h-8 w-8 text-primary" /> */}
               <span className="font-bold text-2xl text-secondary">Safeguarding Africa</span>
             </div>
@@ -43,8 +44,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" variant="outline" className="px-8 bg-secondary">
-                Watch Demo
-                <Icon icon="lucide:play" className="w-4 h-4 ml-2" />
+Listen to the Safeguarding Africa Podcast                <Icon icon="lucide:play" className="w-4 h-4 ml-2" />
               </Button>
               <Button size="lg" className="px-8">
                 <Link href={""}> 
@@ -221,12 +221,9 @@ export default function Home() {
       <section className="py-20 text-primary-foreground md:py-32 relative overflow-hidden">
         <div className="container mx-auto px-4 lg:px-6">
           <div className="text-center space-y-8 max-w-3xl mx-auto">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary">
-              Ready to Transform Child Development in Your Community?
-            </h2>
-            <p className="text-xl opacity-90 leading-relaxed text-accent">
-              Join thousands of businesses that have already enhanced their community childhood health.
-            </p>
+            <div className="flex items-center justify-center">
+              <Image src={logoLandScape} alt="logo" width={480} height={360}/>
+          </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button size="lg" variant="default" className="px-8">
                 <Link href={"mailto:mandisa@sefeguardingafrica.org"}>
@@ -245,7 +242,7 @@ export default function Home() {
               </Button>
             </div>
             <p className="text-sm opacity-75 text-secondary">
-              All Demos a Free • With Zero Commitment • At your peace
+              All Demos are Free • With Zero Commitment • At your peace
             </p>
           </div>
         </div>
